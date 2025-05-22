@@ -53,8 +53,8 @@
                 <label>
                     Location
                     <select name="location">
-                        <option th:value="S" th:selected="(${location}=='K')">Systemet</option>
-                        <option th:value="K" th:selected="(${location}=='S')">Krogen</option>
+                        <option th:value="S" th:selected="(${location}=='S')">Systemet</option>
+                        <option th:value="K" th:selected="(${location}=='K')">Krogen</option>
                     </select>
                 </label>
 
@@ -67,6 +67,7 @@
                 </label>
 
             </fieldset>
+            <h1 th:text="${Result}"></h1>
 
             <input
                     type="submit"
